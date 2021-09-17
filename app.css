@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-option .material-icons,
+.fa-twitter {
+  padding: 20px;
+}
+.sidebar-option h2 {
+  font-weight: 400;
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.sidebar-option:hover {
+  color: rgb(29, 155, 240);
+  background-color: #e6ecf0;
+  border-radius: 30px;
+  transition: color 100ms ease-out;
+}
+.sidebar-option.active h2{
+  font-weight: 700;
+}
+
+.tweet-btn {
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: rgb(29, 155, 240);
+  font-weight: 900;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.sidebar {
+  border-right: 1px solid #e6ecf0;
+  flex: 0.2;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.fa-twitter {
+  color: rgb(29, 155, 240);
+  font-size: 30px;
+}
+
+/* feed */
+.feed {
+  border-right: 1px solid #e6ecf0;
+  flex: 0.5;
+  min-width: 600px;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.feed_header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid #e6ecf0;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.top_tweets {
+    margin-left: auto;
+    transform: rotate(-180deg);
+}
+.feed_header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+/* tweet box */
+.tweetbox_input img {
+    border-radius: 50%;
+    height: 40px;
+}
+.tweetbox {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e6ecf0;
+    padding-right: 10px;
+}
+
+.tweetbox form {
+    display: flex;
+    flex-direction: column;
+}
+.tweetbox_input {
+    display: flex;
+    padding: 20px;
+}
+.tweetbox_input input {
+    flex: 1;
+    border: none;
+    margin-left: 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+.tweetbox_tweetBtn {
+    color: white;
+    background-color: rgb(29, 155, 240);
+    border-radius: 30px;
+    height: 40px;
+    border: none;
+    font-weight: 900;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* post */
+.post_avatar img{
+    border-radius: 50%;
+    height: 50px;
+    margin: 10px 10px 0px 20px;
+    cursor: pointer;
+}
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #e6ecf0;
+    padding-bottom: 10px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.post_body img {
+    width: 500px;
+    object-fit: contain;
+    border-radius: 20px;
+    max-height: 700px;
+}
+.post_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 80px;
+    cursor: pointer;
+}
+.post_badge {
+    font-size: 14px !important;
+    color: rgb(29, 155, 240);
+    margin-right: 5px;
+}
+.twitter_id {
+    font-size: 15px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+.post_header_text h3{
+    font-size:  15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.post_header_description {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.widget {
+    flex: 0.3;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.widget_input {
+    display: flex;
+    align-items: center;
+    background-color: #e6ecf0;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.widget_input input {
+    border: none;
+    background-color: #e6ecf0;
+    outline: none;
+    width: 250px;
+}
+.widget_searchIcon {
+    color: gray;
+    margin-right: 20px;
+}
+
+.widget_container {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #eff3f786;
+    border-radius: 20px;
+}
+.widget_container h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
